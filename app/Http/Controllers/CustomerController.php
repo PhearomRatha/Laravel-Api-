@@ -73,7 +73,8 @@ public function update(Request $request,$id){
         $cus = Customer::findOrFail($id);
         $cus->update($request->all());
         return response()->json([
-            'status'=>'update successfully',
+            'status'=>'successfully',
+
 
             'data'=>$cus,
         ]);
